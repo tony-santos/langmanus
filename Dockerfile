@@ -6,6 +6,7 @@ COPY pyproject.toml uv.lock /app/
 RUN touch README.md
 RUN uv sync
 
+# need to understand uv install better
 RUN uv run playwright install chromium --only-shell --with-deps
 
 COPY . /app

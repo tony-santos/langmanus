@@ -1,3 +1,4 @@
+# look into this container image source for more details
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm
 WORKDIR /app
 ENV CHROME_HEADLESS=True
